@@ -9,7 +9,7 @@ var skuList;
 var contents;
 
 // member.json 파일 불러오기
-fetch('../../resource/json/member.json') // JSON 파일의 상대경로 지정
+fetch('./member.json') // JSON 파일의 상대경로 지정
     .then(response => {
         if (!response.ok) {
             throw new Error('HTTP error ' + response.status);
